@@ -1,0 +1,103 @@
+.dsmeta-card {
+    background-color: #283142;
+    border-radius: 10px; /*botar a borda do quadro de vendas redondas*/
+    padding: 30px 10px;
+}
+.dsmeta-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto; /*macete para alinhar o div ao centro*/
+}
+
+#sales {
+    padding: 40px 10px; /*primeira linha vai ser na vertical e na segunda a horizontal*/
+}
+.dsmeta-sales-title {
+    color: #676FFF;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.dsmeta-from-control-container {
+    margin-bottom: 16px;
+    max-width: 300px; /*o máximo de largura, para o input n aumentar mais q isso*/
+}
+
+.dsmeta-from-control {
+    width: 100%; /*largura dos inputs*/
+    height: 46px; /*tamanho dos inputs*/
+    background-color: #1B2531; /*cor dos inputs*/
+    border: 1px solid #384459; /*cor das laterais dos inputs*/
+    border-radius: 5px; /*arredondamento das bordas dos inputs*/
+    color: #9AAABE; /*cor dos caracteres inseridos no input*/
+    padding: 0 20px; /*espaçamento dos caracteres inseridos no input com o quadrado do input*/
+    font-size: 18px; /*tamanho dos caracteres inseridos dentro do input*/
+    
+}
+.dsmeta-sales-table {
+    width: 100%;
+    border-spacing: 0; /*espaçamento entre as bordas da tabela*/
+    border-collapse: collapse; /*para aparecer as linhas da tabela*/
+}
+.dsmeta-sales-table thead { /*observe q pegou a classe e a tag para fazer as edições com css com nome vendedor, total e notificar*/
+    height: 55px; /*tamanho da altura*/
+    font-size: 16px; /*tamanho da letra*/
+    color: #E9E9E9;
+    font-weight: 700;
+}
+.dsmeta-sales-table tbody {
+    font-size: 14px;
+    font-weight: 400;
+    color: #cfcfcf;
+    text-align: center; /*esse alinhou os caracteres ao centro*/
+}
+.dsmeta-sales-table tbody tr {
+    height: 74px;
+    border-top: 1px solid #5f6e82;
+}
+
+.dsmeta-sales-table tbody tr:hover > td { /*quando passa o mouse em cima do campo da tag td ele bota essa cor: #384459*/
+    background-color: #384459;
+}
+
+.dsmeta-sales-table tbody tr:nth-child(odd) { /*sempre q for impar ele vai colocar a cor #2424C3B */
+    background-color: #242C3B; 
+}
+
+.dsmeta-red-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.show576 {
+    display: none; /*n mostra o conteudo da tag*/
+}
+
+.show992 {
+    display: none;
+}
+
+@media (min-width: 576px) { /*apartir dessa largura "min-width: 576px" só vai valer oq tiver dentro das chaves do @media*/
+    .show576 {  
+        display: table-cell; /*table-cell é o display normal de um elemento de uma tabela*/
+    }
+
+    .dsmeta-card { 
+        padding: 35px;
+    /*qnd tiver em 576px ou + vai mudar o padding para 35px*/
+    }
+    .dsmeta-sales-table tbody tr {
+        height: 55px;
+    /*qnd tiver em 576px ou + vai mudar a altura(height) dos caracteres=letras para 55px*/
+    }
+    .dsmeta-sales-table tbody {
+        font-size: 18px;
+    /*qnd tiver em 576px ou + vai mudar o tamanho da fonte de toda a tabela para 18px*/
+    }
+}
+@media (min-width: 992px) { /*se a largura for no minimo de 992px ou mais ele mostra os conteudos q a classe ta que no caso é o id, visitas, vendas*/
+    .show992 {
+        display: table-cell;
+    }
+}

@@ -19,3 +19,13 @@ a:visited {
   color: unset;
   text-decoration: none;
 }
+
+.dsmeta-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto; /*macete para alinhar o div ao centro*/
+}
+
+#sales {
+  padding: 40px 10px; /*primeira linha vai ser na vertical e na segunda a horizontal*/
+}
