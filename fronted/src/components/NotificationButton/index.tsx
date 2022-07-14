@@ -1,5 +1,5 @@
-    import icon from '../../assets/img/notification-icon.svg' // se o arquivo q deseja buscar esteja em pasta anterior use ../
-    import './styles.css' /*se o arquivo está na mesma pasta use ./ */
+    import icon from '../../assets/img/notification-icon.svg'; // se o arquivo q deseja buscar esteja em pasta anterior use ../
+    import './styles.css'; /*se o arquivo está na mesma pasta use ./ */
 
     function NotificationButton() {
     return (
